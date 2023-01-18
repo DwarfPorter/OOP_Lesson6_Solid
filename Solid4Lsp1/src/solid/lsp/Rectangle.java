@@ -1,8 +1,8 @@
 package solid.lsp;
 
-public class Rectangle {
-    private int sideA;
-    private int sideB;
+public class Rectangle implements Shape {
+    int sideA;
+    int sideB;
 
     public Rectangle(int sideA, int sideB) {
         this.setSideA(sideA);
@@ -25,7 +25,7 @@ public class Rectangle {
         this.sideB = sideB;
     }
 
-    public int getArea() {
+    public double getArea() {
         return sideA * sideB;
     }
 }
