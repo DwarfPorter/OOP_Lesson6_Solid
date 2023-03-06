@@ -1,12 +1,14 @@
 package solid;
 
-import solid.srp.Point;
-import solid.srp.Square;
+import solid.srp.SquareCount;
+import solid.srp.SquareView;
 
 public class Main {
     public static void main(String[] args) {
-        Square square = new Square(new Point(1,1), 5);
+
+        SquareCount square = new SquareCount(5);
+        SquareView squareView = new SquareView();
         System.out.printf("Площадь фигуры: %d \n", square.getArea());
-        square.draw();
+        squareView.draw(square.getSide()*3);
     }
 }
